@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Main.DetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:id="@+id/tv_activityDetail_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_activityDetail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/iv_activityDetail_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/iv_activityDetail_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/iv_activityDetail_edit"
+            android:src="@drawable/delete"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/iv_activityDetail_star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/iv_activityDetail_delete"
+            android:background="@drawable/star"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+</RelativeLayout>

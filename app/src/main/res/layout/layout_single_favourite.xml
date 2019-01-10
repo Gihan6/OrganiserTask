@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/tv_singleItemFavourite_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_singleItemFavourite_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_singleItemFavourite_title"
+        android:layout_marginLeft="25dp"
+        android:text="Desc" />
+
+    <Button
+        android:id="@+id/btn_singleItemFavourite_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_singleItemFavourite_title"
+        android:layout_alignEnd="@+id/tv_singleItemFavourite_title"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/background_button_favourite"
+        android:padding="2dp"
+        android:text="@string/unFavourite"
+        android:textColor="@android:color/white"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>
